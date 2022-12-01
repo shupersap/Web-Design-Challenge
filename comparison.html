@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Add a title here -->
-
+    <title>Comparison</title>
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
 
@@ -18,9 +18,68 @@
 
   <body>
     <!-- Start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Latitude Navigation</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+              <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- End of navbar -->
-
     <!-- Start of container -->
+    <div class = "container">
+    <div class = "row">
+    <div class = "box">
+    <div class="col-md-4 col-sm-12">
+            <h2>Comparisons</h2>
+            <hr>
+                <div class= "col-md-6 col-md-12" style = "padding-bottom:10px;">
+                  <div class = "row">
+                    <div class="title">Latitude vs. Max Temperature</div>
+                    <div class= "col-md-6 col-md-12" style = "padding-bottom:30px;"></div>
+                  <a href="visualizations/temp.html">
+                    <img id ="visual1" src="assets/images/Fig1.png" alt="City Latitude vs Max Temperature" height="200" width="200"> 
+                  </a>
+                </div> 
+                <div class="col-lg-6" style="padding-bottom: 30px;">
+                            <div class="title">Latitude vs. Humidity</div>
+                            <a href="visualizations/humidity.html">
+                              <img id ="visual2" src="assets/images/Fig2.png" alt="City Latitude vs Max Temperature" height="200" width="200">
+                            </a>
+                        </div>
+                <div class="col-lg-6" style="padding-bottom: 30px;">
+                  <div class="title">Latitude vs. Cloudiness</div>
+                  <a href="visualizations/cloudiness.html">
+                    <img id = "visual3" src="assets/images/Fig3.png" alt="City Latitude vs Cloudiness" height="200" width="200">
+                  </a>
+                </div>      
+                <div class="col-lg-6" style="padding-bottom: 30px;">
+                  <div class="title">Latitude vs. Wind Speed</div>
+                  <a href="visualizations/wind.html">
+                    <img id = "visual4" src="assets/images/Fig4.png" alt="City Latitude vs Wind Speed" height="200" width="200">
+                  </a>
+                </div> 
     <!-- End of container -->
 
     <!-- jQuery CDN -->
