@@ -18,11 +18,75 @@
 
   <body>
     <!-- Start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Latitude Navigation</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+              <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- End of navbar -->
 
     <!-- Start of container -->
-
+ <div class="container">
+      <div class="row">
+      <div class="col-lg-8 col-sm-12">
+      <div class="box">
+        <h1>Latitude Vs. wind Speed</h1>
+        <hr>
+        <br>
+        <img src="assets/images/Fig3.png" alt="Latitude Vs. Wind Speed" height="200" width="200" align = "left" >
+        <p>The speed of wind doesn't show to have little association dependent on the latitude as speeds are relatively similar below 40 latitude but a change can be noticed at latitudes of 60 or greater as wind speeds associatively increase.
+        </p>
           <!-- Start of Visualizations imageNav Area -->
+          </div>
+        <div class="col-md-4 col-sm-12">
+            <h2>Visualizations</h2>
+            <hr>
+                <div class= "col-md-6 col-md-12">
+                  <a href="visualizations/temp.html">
+                    <img id ="visual1" src="assets/images/Fig1.png" alt="City Latitude vs Max Temperature" height="200" width="200"> 
+                  </a>
+                </div> 
+                <div class= "col-md-6 col-sm-3">
+                  <a href="visualizations/humidity.html">
+                    <img id ="visual2" src="assets/images/Fig2.png" alt="City Latitude vs Humidity" height="200" width="200">
+                  </a>
+                </div> 
+                <div class= "col-md-6 col-sm-3">
+                  <a href="visualizations/cloudiness.html">
+                    <img id = "visual3" src="assets/images/Fig3.png" alt="City Latitude vs Cloudiness" height="200" width="200">
+                  </a>
+                </div>      
+                <div class= "col-md-6 col-sm-3">
+                  <a href="visualizations/wind.html">
+                    <img id = "visual4" src="assets/images/Fig4.png" alt="City Latitude vs Wind Speed" height="200" width="200">
+                  </a>
+                </div> 
+        </div>
+    </div>
+</div>
           <!-- End of the Visualizations imageNav Area -->
 
     <!-- End of container -->
