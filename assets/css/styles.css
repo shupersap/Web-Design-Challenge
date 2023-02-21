@@ -3,3 +3,8 @@
   }
   
 p.solid {border-style: solid;}
+
+body {
+  background: #fffffff5; 
+  line-height: 2; 
+}
